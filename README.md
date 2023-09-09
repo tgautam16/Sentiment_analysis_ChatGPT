@@ -1,11 +1,11 @@
 # Sentiment_analysis_ChatGPT
 Sentiment Analysis of three months of Chat GPT tweets on twitter.
 
-This code does sentiment analysis of tweets on twitter for three months (Jan-Mar 2023) with ChatGPT hastags. The tweets were unlabelled.
+This code performs sentiment analysis of tweets for three months (Jan-Mar 2023) with ChatGPT hashtags. The tweets are not labelled in the dataset. 
 
 After cleaning (Tokenization, Noise-Removal, and Lemmatization of content from each tweet) and analysing each column of the dataset closely, I determined the polarity of each tweet from its content using two different tools: NLTK's TextBlob and VaderSentiment Analysis. 
 
-For evaluating the sentiment score from TextBlob: I first did POS(Part-of-Speech) tagging for each tweet, also done by separating each sentence from individual tweet. The adjectives from each tweet are then separated. The polarity is then calculated using TextBlob based on the adjectives of each tweet. 
+For evaluating the sentiment score from TextBlob: I first executed POS(Part-of-Speech) tagging for each tweet, also done by separating each sentence from individual tweet. The adjectives from each tweet are then separated. The polarity is then calculated using TextBlob based on the adjectives of each tweet. 
 
 For Vader sentiment analysis: The content was cleaned but no punctuations were removed such that the tool can read the sentiments accurately for each tweet. The polarity score was then calculated.
 
